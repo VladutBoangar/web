@@ -18,7 +18,7 @@
     <p><strong>Hobbiuri:</strong> Fotbal , Handbal , Gaming , Collecting , Parfumeria , Tattoo Artist , Seriale/Anime</p>
 
     <h2>Educație și formare</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Perioada</th>
             <th>Instituția</th>
@@ -26,12 +26,12 @@
         </tr>
         <tr>
             <td> 2015-2019</td>
-            <td>Scoala Gimnazială Nr. 9 "Anton Pann" Râmnicu Vâlcea</td>
+            <td>Scoala Gimnaziala 9 "Anton Pann" Ramnicu Valcea</td>
             <td>Finalizare Ciclu Gimnazial</td>
         </tr>
         <tr>
             <td>2019-2023</td>
-            <td>Colegiul National "Alexandru Lahovari" Râmnicu Vâlcea</td>
+            <td>Colegiul National "Alexandru Lahovari" Ramnicu Valcea</td>
             <td>Finalizare Ciclu Liceal</td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
 
         <tr>
             <td>2023</td>
-            <td>Certificare Competențe Lingvistice Lb.Engleză - Nivel B2</td>
+            <td>Certificare Competențe Lingvistice Lb.Engleza - Nivel B2</td>
         </tr>
     </table>
 

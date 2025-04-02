@@ -1,0 +1,415 @@
+/* Reset și stiluri generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Header - ajustat pentru logo de 70px */
+.header {
+    background-color: #000;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px; /* Crescut la 70px pentru a se potrivi cu logoul */
+    border-bottom: 1px solid #333;
+  }
+  
+  .header__logo {
+    padding: 0 20px;
+  }
+  
+  .logo__image {
+    height: 70px; /* Mărit la 70px conform cerinței */
+    width: auto;
+  }
+  
+  /* Navigație principală - ajustată pentru noul header */
+  .header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  
+  .nav__wrapper {
+    display: flex;
+    height: 100%;
+  }
+  
+  .nav__item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 15px;
+    height: 70px; /* Crescut la 70px pentru a ocupa tot header-ul */
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #333;
+    transition: background-color 0.3s;
+  }
+  
+  .nav__item:first-child .nav__link {
+    border-left: 1px solid #333;
+  }
+  
+  .nav__link:hover {
+    background-color: #222;
+    color: #00b8ff;
+  }
+  
+  /* Acțiuni header - ajustate pentru noul header */
+  .header__actions {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    border-right: 1px solid #333;
+  }
+  
+  .search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .offer-button {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .offer-button a {
+    display: block;
+    background-color: #00b8ff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Hero section */
+  .article__hero {
+    background: url('https://images.unsplash.com/photo-1529138624868-923b3a050f04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .article__hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero__wrapper {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .hero__subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* Conținut articol */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .article__wrapper {
+    padding: 40px 0;
+  }
+  
+  .content__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  /* Bloc Citat cu ghilimele */
+  .content__quote {
+    border-left: 5px solid #00b8ff;
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    position: relative;
+  }
+  
+  .content__quote::before {
+    content: '"';
+    font-size: 60px;
+    color: #00b8ff;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    line-height: 0.8;
+  }
+  
+  .quote__author {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    color: #999;
+  }
+  
+  .content__image {
+    width: 80%; /* Ajustează dimensiunea totală */
+    height: auto; /* Păstrează proporțiile corecte */
+    max-height: 500px; /* Ușor mai mică decât înainte */
+    margin: 20px auto; /* O centrează pe pagină */
+    display: block; /* Asigură centrarea corectă */
+}
+
+  
+/* Modify the related section to have full-width black background */
+/* Full width related section with black background */
+.related {
+    background-color: #000;
+    padding: 40px 0;
+    color: #fff;
+    /* Better approach for full width background */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+.related__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.related__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.related__item {
+    width: 30%;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s;
+    /* Gray border by default */
+    border: 1px solid #666;
+
+}
+
+/* Adaugă o imagine specifică fiecărui articol */
+.related__item:nth-child(1) {
+    background-image: url('https://images.unsplash.com/photo-1596731530340-64945278d9f6?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.related__item:nth-child(2) {
+    background-image: url('https://images.unsplash.com/photo-1485965120184-e220f721d03e');
+}
+
+.related__item:nth-child(3) {
+    background-image: url('https://images.unsplash.com/photo-1656710008663-fb6e3b91ee92?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+
+/* Blue border only on hover */
+.related__item:hover {
+    transform: translateY(-5px);
+    border-color: #00b8ff;
+}
+
+.item__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+  
+  .related__action {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border: 1px solid #fff;
+  }
+  
+  .related__action:hover {
+    background-color: #00b8ff;
+    border-color: #00b8ff;
+  }
+  
+  /* Social media - fundal alb */
+  .social {
+    padding: 20px 0;
+    background-color: #fff;
+    border: none;
+  }
+  
+  .social__wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .social__item {
+    margin-right: 20px;
+  }
+  
+  .social__link {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .social__link:hover {
+    color: #00b8ff;
+  }
+  
+  /* Footer modificat */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer__menu {
+    margin-bottom: 30px;
+  }
+  
+  .menu__wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .menu__item {
+    margin: 0;
+  }
+  
+  .menu__link {
+    display: block;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s;
+    padding: 5px 20px;
+    border-right: 1px solid #333;
+  }
+  
+  .menu__item:first-child .menu__link {
+    border-left: 1px solid #333;
+  }
+  
+  .menu__link:hover,
+  .menu__link--active {
+    color: #00b8ff;
+  }
+  
+  .footer__content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer__logo {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .footer__copyright {
+    color: #666;
+    font-size: 12px;
+  }
